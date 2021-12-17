@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/
+mybatis-3-mapper.dtd">
+<mapper namespace="Board">
+	<insert id="insertBoard">
+		 insert into happiness (userid, title, photo, content, happy) 
+		 values 
+		 (#{userid} , #{title} , #{photo} , #{content} , #{happy}) 
+	</insert>
+	<update id="updateBoard">
+		 update happiness 
+		 set title=#{title}, photo=#{photo}, content=#{content}, happy=#{happy} 
+		 where seq=#{seq} 
+	</update>
+	<delete id="deleteBoard">
+		 delete from happiness where seq=#{seq} 
+	</delete>
+	<select id="getBoard" resultType="board">
+		 select * from happiness where seq=#{seq} 
+	</select>
+	<select id="getBoardList" resultType="board">
+		 select * from happiness order by seq desc
+	</select>
+</mapper>
