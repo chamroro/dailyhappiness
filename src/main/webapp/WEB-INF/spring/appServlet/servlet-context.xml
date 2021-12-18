@@ -22,6 +22,9 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	<beans:bean id="LoginCheckInterceptor" class="com.my.myapp.user.LoginCheckInterceptor">
+	</beans:bean>
+	
 	<interceptors>
 		 <interceptor>
 			 <mapping path="/**" />
