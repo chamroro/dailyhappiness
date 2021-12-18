@@ -116,12 +116,9 @@ th, td {
 	width: 5%;
 }
 
-
-
 .title{
 	width: 10%;
 }
-
 .content{
  	width: 60%;
 }
