@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;600;700&display=swap');
 
 	body{
-	position: absolute;
+		position: absolute;
 		margin: auto 0;
 		top: 40%;
 		width: 100%;
