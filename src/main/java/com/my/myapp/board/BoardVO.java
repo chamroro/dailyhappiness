@@ -9,6 +9,8 @@ public class BoardVO {
 	private String photo;
 	private String content;
 	private String happy;
+	private String day;
+	private String date;
 	private Date regdate;
 	
 	public int getSeq() {
@@ -46,6 +48,18 @@ public class BoardVO {
 	}
 	public void setHappy(String happy) {
 		this.happy = happy;
+	}
+	public String getDay() {
+		return day;
+	}
+	public void setDay(String day) {
+		this.day = day;
+	}
+	public String getDate() {
+		return date;
+	}
+	public void setDate(String date) {
+		this.date = date;
 	}
 	public Date getRegdate() {
 		return regdate;

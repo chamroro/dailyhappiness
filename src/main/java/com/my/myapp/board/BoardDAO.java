@@ -40,6 +40,8 @@ public class BoardDAO {
 			vo.setPhoto(rs.getString("photo"));
 			vo.setContent(rs.getString("content"));
 			vo.setHappy(rs.getString("happy"));
+			vo.setDay(rs.getString("day"));
+			vo.setDate(rs.getString("date"));
 			vo.setRegdate(rs.getDate("regdate"));
 			return vo;
 		}

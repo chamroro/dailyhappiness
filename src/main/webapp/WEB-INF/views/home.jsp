@@ -7,7 +7,7 @@
 	<title>Daily Happiness(Login)</title>
 </head>
 <body>
-<p> <a href="./list">게시판</a> </p>
+<p> <a href="./">게시판</a> </p>
 </body>
 
 </html>

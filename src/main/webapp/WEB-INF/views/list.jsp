@@ -19,8 +19,8 @@ th, td { display: block; }
 
 <c:forEach items="${list}" var="u">
    <tr>
-      <td><script>getDay(Date(${u.regdate}).getDay() ,'spanID')</script>  <span id='spanID'></span></td>
-      <td>${u.regdate}</td>
+      <td>${u.day}</td>
+      <td>${u.date}</td>
       <td>${u.happy}</td>
       <td>${u.title}</td>
       <td>${u.content}</td>
@@ -35,10 +35,3 @@ th, td { display: block; }
 </table>
 </body>
 </html>
-<script>
-function getDay(day, id) {
-    var week = new Array('일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일');
-    var Day = week[day];
-    document.getElementById(id).innerHTML = Day;
-}
-</script>
